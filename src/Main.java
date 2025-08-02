@@ -2,7 +2,7 @@
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        SNode head = new SNode(1);
+        /*SNode head = new SNode(1);
         SNode two = new SNode(2);
         SNode three = new SNode(3);
         SNode four = new SNode(4);
@@ -83,6 +83,43 @@ public class Main {
         //isll.printSLL(isll.insertAfterValueSLL(head, 0, 1));
         isll.printSLL(isll.insertAfterValueSLL(new SNode(7), 0, 3));
         //isll.printSLL(isll.insertAfterValueSLL(head, 0,3));
-        isll.printSLL(isll.insertAfterValueSLL(head, 0,5));
+        isll.printSLL(isll.insertAfterValueSLL(head, 0,5));*/
+
+
+        DNode head = new DNode(1, null);
+        DNode two = new DNode(2, head);
+        DNode three = new DNode(3, two);
+        DNode four = new DNode(4, three);
+        DNode five = new DNode(5, four);
+
+        head.next = two;
+        two.next = three;
+        three.next = four;
+        four.next = five;
+
+        Delete ddll = new Delete();
+        /*System.out.println("Delete Head");
+        ddll.printDLL(ddll.deleteHeadDLL(null));
+        ddll.printDLL(ddll.deleteHeadDLL(new DNode(7)));
+        ddll.printDLL(ddll.deleteHeadDLL(head));
+
+        System.out.println("Delete Tail");
+        ddll.printDLL(ddll.deleteTailDLL(null));
+        ddll.printDLL(ddll.deleteTailDLL(new DNode(7)));
+        ddll.printDLL(ddll.deleteTailDLL(head));
+
+        System.out.println("Delete Kth Node");
+        ddll.printDLL(ddll.deleteKthNodeDLL(null, 3));
+        ddll.printDLL(ddll.deleteKthNodeDLL(head, 0));
+        ddll.printDLL(ddll.deleteKthNodeDLL(new DNode(7), 3));
+        ddll.printDLL(ddll.deleteKthNodeDLL(head, 1));
+        ddll.printDLL(ddll.deleteKthNodeDLL(head, 3));
+
+        System.out.println("Delete element with a value");
+
+        ddll.printDLL(ddll.deleteValueDLL(null, 3));
+        ddll.printDLL(ddll.deleteValueDLL(head, 0));
+        ddll.printDLL(ddll.deleteValueDLL(head, 1));
+        ddll.printDLL(ddll.deleteValueDLL(head, 4));*/
     }
 }
