@@ -2,7 +2,7 @@
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        /*SNode head = new SNode(1);
+        SNode head = new SNode(1);
         SNode two = new SNode(2);
         SNode three = new SNode(3);
         SNode four = new SNode(4);
@@ -83,7 +83,7 @@ public class Main {
         //isll.printSLL(isll.insertAfterValueSLL(head, 0, 1));
         isll.printSLL(isll.insertAfterValueSLL(new SNode(7), 0, 3));
         //isll.printSLL(isll.insertAfterValueSLL(head, 0,3));
-        isll.printSLL(isll.insertAfterValueSLL(head, 0,5));*/
+        isll.printSLL(isll.insertAfterValueSLL(head, 0,5));
 
 
         DNode head = new DNode(1, null);
@@ -98,7 +98,7 @@ public class Main {
         four.next = five;
 
         Delete ddll = new Delete();
-        /*System.out.println("Delete Head");
+        System.out.println("Delete Head");
         ddll.printDLL(ddll.deleteHeadDLL(null));
         ddll.printDLL(ddll.deleteHeadDLL(new DNode(7)));
         ddll.printDLL(ddll.deleteHeadDLL(head));
@@ -120,6 +120,61 @@ public class Main {
         ddll.printDLL(ddll.deleteValueDLL(null, 3));
         ddll.printDLL(ddll.deleteValueDLL(head, 0));
         ddll.printDLL(ddll.deleteValueDLL(head, 1));
-        ddll.printDLL(ddll.deleteValueDLL(head, 4));*/
+        ddll.printDLL(ddll.deleteValueDLL(head, 4));
+
+        Insert idll = new Insert();
+
+        System.out.println("Insert element before Head");
+
+        idll.printDLL(idll.insertBeforeHeadDLL(null, 3));
+        idll.printDLL(idll.insertBeforeHeadDLL(new DNode(7), 0));
+        idll.printDLL(idll.insertBeforeHeadDLL(head, 0));
+
+        System.out.println("Insert element After Head");
+
+        idll.printDLL(idll.insertAfterHeadDLL(null, 3));
+        idll.printDLL(idll.insertAfterHeadDLL(new DNode(7), 0));
+        idll.printDLL(idll.insertAfterHeadDLL(head, 0));
+
+        System.out.println("Insert element Before Tail");
+
+        idll.printDLL(idll.insertBeforeTailDLL(null, 3));
+        idll.printDLL(idll.insertBeforeTailDLL(new DNode(7), 0));
+        idll.printDLL(idll.insertBeforeTailDLL(head, 0));
+
+        System.out.println("Insert element After Tail");
+
+        idll.printDLL(idll.insertAfterTailDLL(null, 3));
+        idll.printDLL(idll.insertAfterTailDLL(new DNode(7), 0));
+        idll.printDLL(idll.insertAfterTailDLL(head, 0));
+
+        System.out.println("Insert element Before Kth");
+
+        idll.printDLL(idll.insertBeforeKthDLL(null, 0, 3));
+        idll.printDLL(idll.insertBeforeKthDLL(new DNode(7), 0,3));
+        idll.printDLL(idll.insertBeforeKthDLL(head, 0,3));
+
+        System.out.println("Insert element After Kth");
+
+        idll.printDLL(idll.insertAfterKthDLL(null, 0, 3));
+        idll.printDLL(idll.insertAfterKthDLL(new DNode(7), 0,3));
+        idll.printDLL(idll.insertAfterKthDLL(head, 0,3));
+
+        System.out.println("Insert element before Value");
+
+        idll.printDLL(idll.insertBeforeValueDLL(null, 0, 3));
+        idll.printDLL(idll.insertBeforeValueDLL(new DNode(7), 0,3));
+        idll.printDLL(idll.insertBeforeValueDLL(new DNode(7), 0,7));
+        idll.printDLL(idll.insertBeforeValueDLL(head, 0,3));
+        //idll.printDLL(idll.insertBeforeValueDLL(head, 0,5));
+
+        System.out.println("Insert element After Value");
+
+        idll.printDLL(idll.insertAfterValueDLL(null, 0, 3));
+        idll.printDLL(idll.insertAfterValueDLL(new DNode(7), 0,3));
+        idll.printDLL(idll.insertAfterValueDLL(new DNode(7), 0,7));
+        //idll.printDLL(idll.insertAfterValueDLL(head, 0,3));
+        idll.printDLL(idll.insertAfterValueDLL(head, 0,5));
+
     }
 }
